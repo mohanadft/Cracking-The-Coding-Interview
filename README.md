@@ -1,4 +1,4 @@
-## Cracking the Coding Interview
+# Cracking the Coding Interview
 
 ![Cracking the Coding Interview Book Picture](https://images-na.ssl-images-amazon.com/images/I/619M-4xNINL.jpg)
 
