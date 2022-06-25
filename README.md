@@ -1,6 +1,6 @@
 ## Cracking the Coding Interview
 
-![Cracking the Coding Interview Book Picture](https://www.amazon.ca/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+![Cracking the Coding Interview Book Picture](https://images-na.ssl-images-amazon.com/images/I/619M-4xNINL.jpg)
 
 #### Solutions For Cracking the Coding Interview using *JavaScript*💻
 
