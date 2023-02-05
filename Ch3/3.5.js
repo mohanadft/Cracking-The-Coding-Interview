@@ -62,7 +62,7 @@ const sort = s => {
 	while (!r.isEmpty()) s.push(r.pop())
 }
 
-// Solution (Which is not allowed by the Question but for you record)
+// Solution (Which is not allowed by the Question but for the record)
 
 const sort2 = s => {
 	const sortedArray = []
