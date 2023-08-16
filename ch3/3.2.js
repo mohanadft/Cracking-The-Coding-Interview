@@ -27,46 +27,46 @@
  */
 
 class StackNode {
-	constructor(data) {
-		this.data = data
-		this.next = null
-	}
+  constructor(data) {
+    this.data = data;
+    this.next = null;
+  }
 }
 
 class MyStack {
-	constructor(top = null) {
-		this.top = top
-	}
+  constructor(top = null) {
+    this.top = top;
+  }
 
-	push(data) {
-		const newNode = new StackNode(data)
-		if (data > this.top.data) {
-			// Smallest Item wil be on top Always
-			newNode.next = this.top.next
-			this.top.next = newNode
-			return
-		}
-		newNode.next = this.top
-		this.top = newNode
-	}
+  push(data) {
+    const newNode = new StackNode(data);
+    if (data > this.top.data) {
+      // Smallest Item wil be on top Always
+      newNode.next = this.top.next;
+      this.top.next = newNode;
+      return;
+    }
+    newNode.next = this.top;
+    this.top = newNode;
+  }
 
-	pop() {
-		if (!this.top) return
-		let temp = this.top.data
-		this.top = this.top.next
-		return temp
-	}
+  pop() {
+    if (!this.top) return;
+    let temp = this.top.data;
+    this.top = this.top.next;
+    return temp;
+  }
 
-	peek() {
-		if (!this.top) return
-		return this.top.data
-	}
+  peek() {
+    if (!this.top) return;
+    return this.top.data;
+  }
 
-	getMin() {
-		return this.peek()
-	}
+  getMin() {
+    return this.peek();
+  }
 
-	isEmpty() {
-		return this.top === null
-	}
+  isEmpty() {
+    return this.top === null;
+  }
 }

@@ -9,22 +9,22 @@
  */
 
 class Node {
-	constructor(data) {
-		this.data = data
-		this.next = null
-	}
+  constructor(data) {
+    this.data = data;
+    this.next = null;
+  }
 }
 
 const isIntersected = (l1, l2) => {
-	if (!l1 || !l2) return false
-	let [p1, p2] = [l1, l2]
+  if (!l1 || !l2) return false;
+  let [p1, p2] = [l1, l2];
 
-	while (p1) {
-		while (p2) {
-			if (p1 === p2) return true
-			p2 = p2.next
-		}
-		p1 = p1.next
-	}
-	return false
-}
+  while (p1) {
+    while (p2) {
+      if (p1 === p2) return true;
+      p2 = p2.next;
+    }
+    p1 = p1.next;
+  }
+  return false;
+};

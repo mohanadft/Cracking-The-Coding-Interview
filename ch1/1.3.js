@@ -14,6 +14,6 @@
  * Output: "Mr%20John%20Smith"
  */
 
-const urlify = s => s.trim().replaceAll(' ', '%20')
+const urlify = s => s.trim().replaceAll(' ', '%20');
 
-const urlify2 = s => s.split` `.filter(c => c != '').join`%20`
+const urlify2 = s => s.split` `.filter(c => c != '').join`%20`;

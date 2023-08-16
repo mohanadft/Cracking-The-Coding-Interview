@@ -14,18 +14,18 @@
  */
 
 const check2 = str => {
-	str = str
-		.split(' ')
-		.map(slice => slice.toLowerCase())
-		.join('')
+  str = str
+    .split(' ')
+    .map(slice => slice.toLowerCase())
+    .join('');
 
-	let countOdd = 0
-	const obj = {}
+  let countOdd = 0;
+  const obj = {};
 
-	for (let i = 0; i < str.length; i++)
-		obj[str[i]] = str[i] in obj ? ++obj[str[i]] : 1
+  for (let i = 0; i < str.length; i++)
+    obj[str[i]] = str[i] in obj ? ++obj[str[i]] : 1;
 
-	for (let char in obj) if (obj[char] % 2 !== 0) countOdd++
+  for (let char in obj) if (obj[char] % 2 !== 0) countOdd++;
 
-	return countOdd <= 1
-}
+  return countOdd <= 1;
+};

@@ -12,16 +12,16 @@
  */
 
 class Node {
-	constructor(data) {
-		this.data = data
-		this.next = null
-	}
+  constructor(data) {
+    this.data = data;
+    this.next = null;
+  }
 }
 
 const deleteNode = n => {
-	if (!n || !n.next) return false
-	let next = n.next
-	n.data = next.data
-	n.next = next.next
-	return true
-}
+  if (!n || !n.next) return false;
+  let next = n.next;
+  n.data = next.data;
+  n.next = next.next;
+  return true;
+};
